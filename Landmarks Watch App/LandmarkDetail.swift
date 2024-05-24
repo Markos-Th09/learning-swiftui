@@ -41,7 +41,7 @@ struct LandmarkDetail: View {
                 
                 Divider()
                 
-                MapView(coordinate: landmark.locationCoordinates)
+                MapView(coordinate: landmark.locationCoordinate)
                     .scaledToFit()
             }
             .padding(16)
