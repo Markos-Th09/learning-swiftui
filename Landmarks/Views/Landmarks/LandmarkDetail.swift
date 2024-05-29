@@ -15,7 +15,7 @@ struct LandmarkDetail: View {
             MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
             CircleImage(image: landmark.image)
-                .offset(y:-130)
+                .offset(y: -130)
                 .padding(.bottom, -130)
             VStack(alignment: .leading) {
                 HStack {
@@ -23,7 +23,7 @@ struct LandmarkDetail: View {
                     FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
                 }
                 HStack {
-                    Text(landmark.park)
+                    Text(landmark.city)
                     Spacer()
                     Text(landmark.state)
                 }

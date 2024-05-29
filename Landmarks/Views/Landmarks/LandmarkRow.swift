@@ -14,7 +14,7 @@ struct LandmarkRow: View {
                 Text(landmark.name)
                     .bold()
                 #if !os(watchOS)
-                Text(landmark.park)
+                Text(landmark.city)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 #endif

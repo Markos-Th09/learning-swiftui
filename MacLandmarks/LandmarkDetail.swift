@@ -39,7 +39,7 @@ struct LandmarkDetail: View {
                         }
 
                         VStack(alignment: .leading) {
-                            Text(landmark.park)
+                            Text(landmark.city)
                             Text(landmark.state)
                         }
                         .font(.subheadline)

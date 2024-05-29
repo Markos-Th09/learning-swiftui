@@ -30,7 +30,7 @@ struct LandmarkDetail: View {
                 Divider()
                 
                 
-                Text(landmark.park)
+                Text(landmark.city)
                     .font(.caption)
                     .bold()
                     .lineLimit(0)

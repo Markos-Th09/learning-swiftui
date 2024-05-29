@@ -7,13 +7,15 @@ struct LandmarkList: View {
     @State private var selectedLandmark: Landmark?
     
     enum FilterCategory: String, CaseIterable, Identifiable {
-            case all = "All"
-            case lakes = "Lakes"
-            case rivers = "Rivers"
-            case mountains = "Mountains"
+        case all = "All"
+        case archeologicalSite = "Archeological Site"
+        case beach = "Beach"
+        case gorge = "Gorge"
+        case mountain = "Mountain"
+        case church = "Church/Monastery"
 
-            var id: FilterCategory { self }
-        }
+        var id: FilterCategory { self }
+    }
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter({ landmark in (!showFavoritesOnly || landmark.isFavorite)

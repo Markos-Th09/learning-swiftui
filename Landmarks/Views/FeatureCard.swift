@@ -4,7 +4,6 @@ import SwiftUI
 struct FeatureCard: View {
     var landmark: Landmark
     
-    
     var body: some View {
         landmark.featureImage?
             .resizable()
@@ -33,7 +32,7 @@ struct TextOverlay: View {
                 Text(landmark.name)
                     .font(.title)
                     .bold()
-                Text(landmark.park)
+                Text(landmark.city)
             }
             .padding()
         }
